@@ -9,7 +9,7 @@ def convert_file(input_file, output_file):
     with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
         for line in infile:
             hex_numbers = line.strip().split('_')
-            binary_numbers = [hex_to_binary(hex_num) for hex_num in hex_numbers]
+            binary_nsumbers = [hex_to_binary(hex_num) for hex_num in hex_numbers]
             outfile.write('_'.join(binary_numbers) + '\n')
 
 

@@ -30,25 +30,33 @@ vlib work
 vlog fdiv.sv fdiv_tb.sv 0419-flopenr.sv modifiedmux2.sv modifiedmux4.sv modifiedunsignedmultiplier.sv
 
 # start and run simulation
-vsim -voptargs=+acc fdiv_tb.sv
+vsim -voptargs=+acc tb
 
 view list
 view wave
 
 -- display input and output signals as hexidecimal values
-# Diplays All Signals recursively
-add wave -hex -r /tb/*
-# add wave -noupdate -divider -height 32 "Datapath"
-# add wave -hex /tb/dut/part1/*
-# add wave -noupdate -divider -height 32 "Control"
-# add wave -hex /tb/dut/part2/*
-# add wave -noupdate -divider -height 32 "Note for Speaker"
-# add wave -hex /tb/dut/part1/note1/*
-# add wave -hex /tb/dut/part1/note2/*
-# add wave -hex /tb/dut/part1/note3/*
-# add wave -hex /tb/dut/part1/note4/*
+# Add waves with the correct hierarchical paths
+add wave -radix binary /tb/dut/N
+add wave -radix binary /tb/dut/D
+add wave -radix binary /tb/dut/rm
+add wave -radix binary /tb/dut/op
+add wave -radix binary /tb/dut/enc
+add wave -radix binary /tb/dut/ena
+add wave -radix binary /tb/dut/enb
+add wave -radix binary /tb/dut/Q
+add wave -radix binary /tb/dut/ia
+add wave -radix binary /tb/dut/ina
+add wave -radix binary /tb/dut/inb
+add wave -radix binary /tb/dut/regc
+add wave -radix binary /tb/dut/rega
+add wave -radix binary /tb/dut/regb
+add wave -radix binary /tb/dut/mult_output
+add wave -radix binary /tb/dut/comp_output
+add wave -radix binary /tb/dut/Nf
+add wave -radix binary /tb/dut/Df
 
-add list -hex -r /tb/*
+add list -radix binary -r /tb/*
 add log -r /*
 
 -- Set Wave Output Items 
