@@ -55,6 +55,7 @@ add wave -radix binary /tb/dut/mult_output
 add wave -radix binary /tb/dut/comp_output
 add wave -radix binary /tb/dut/Nf
 add wave -radix binary /tb/dut/Df
+add wave -radix binary /tb/dut/clk
 
 add list -radix binary -r /tb/*
 add log -r /*
