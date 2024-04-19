@@ -4,7 +4,8 @@ module tb();
    logic  [31:0] N;
    logic 	[31:0] D;
    logic  [1:0] rm;
-   logic 	op, enc, ena, enb;
+   logic 	[1:0] op;
+   logic  enc, ena, enb;
    logic        reset;   
    logic  clk; 
    logic 	[31:0] Q; 
@@ -23,12 +24,12 @@ module tb();
    initial
      begin
     //setup
-	#0   N =  32'b00111111101010011000100100110111;	
-	#0   D =  32'b00111111100011110101110000101001;	
+	#0   N =  32'b00111111100111010111000010100100;	
+	#0   D =  32'b00111111110001111010111000010100;	
   #0   reset = 1'b0;
   //cycl1
 	#0   rm = 2'b00;
-  #0   op = 1'b0;	
+  #0   op = 2'b0;	
   #0   enc = 1'b0;
   #0   enb = 1'b0;
   #0   ena = 1'b1;
@@ -42,7 +43,7 @@ module tb();
   #20  ena = 1'b1;
   #0  enb = 1'b0;
   #0  enc = 1'b0;
-  #0  op = 1'b1;
+  #0  op = 2'b1;
   #0  rm = 2'b10;
   
   
@@ -97,6 +98,13 @@ module tb();
   #0   enc = 1'b1;
 
 
+  // rounding cycle
+
+  #20   rm = 2'b01;
+  #0    op = 2'b10;
+  #0   ena = 1'b0;
+  #0   enb = 1'b0;
+  #0   enc = 1'b0;
 
 
 

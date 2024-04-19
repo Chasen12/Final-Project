@@ -56,6 +56,8 @@ add wave -radix binary /tb/dut/comp_output
 add wave -radix binary /tb/dut/Nf
 add wave -radix binary /tb/dut/Df
 add wave -radix binary /tb/dut/clk
+add wave -radix binary /tb/dut/rem
+add wave -radix binary /tb/dut/prem
 
 add list -radix binary -r /tb/*
 add log -r /*
@@ -73,6 +75,8 @@ configure wave -rowmargin 4
 configure wave -childrowmargin 2
 
 -- Run the Simulation
-run 250 ns
+run 300 ns
 
 
+# 010011101011100001010001111010010010100000101100
+# 0.110101000111101011100001111111
