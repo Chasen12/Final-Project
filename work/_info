@@ -11,24 +11,24 @@ z2
 cModel Technology
 Z0 dC:/Users/temp/Documents/OSU/HSCA/Final Project
 T_opt
-Z1 !s110 1713377365
-V_94e67HIVSgPQP]8G2k1o0
+!s110 1713479834
+VFPBV0XH]Y49XlJBNXcHCR2
 04 2 4 work tb fast 0
-=1-18c04ddb1faf-66201055-1b7-3af8
+=1-18c04ddb1faf-6621a099-374-6da8
 !s124 OEM100
 o-quiet -auto_acc_if_foreign -work work +acc
-Z2 tCvgOpt 0
+Z1 tCvgOpt 0
 n@_opt
 OL;O;2021.1;73
 vfdiv
-Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-R1
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1713479833
 !i10b 1
-!s100 dj3nU;k8ciQRhkBBBkKY`1
-ILf0aXVKmC^NfnBURR9X;[0
+!s100 elg6IofaWEW[?:P=Qif??1
+I8k^IEUVVW`h8T<0ZKYkBf2
 S1
 R0
-w1713377236
+w1713393972
 8fdiv.sv
 Ffdiv.sv
 !i122 0
@@ -38,15 +38,15 @@ Z5 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z6 !s108 1713377365.000000
+Z6 !s108 1713479833.000000
 Z7 !s107 modifiedunsignedmultiplier.sv|modifiedmux4.sv|modifiedmux2.sv|0419-flopenr.sv|fdiv_tb.sv|fdiv.sv|
 Z8 !s90 -reportprogress|300|fdiv.sv|fdiv_tb.sv|0419-flopenr.sv|modifiedmux2.sv|modifiedmux4.sv|modifiedunsignedmultiplier.sv|
 !i113 0
 Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
-vflopren
-R3
 R1
+vflopren
+R2
+R3
 !i10b 1
 !s100 ULSK<llJ1`?0iIUX3FBK21
 IYK<FbJ1KOJ9Y0=XnWK6<11
@@ -67,10 +67,10 @@ R7
 R8
 !i113 0
 R9
-R2
-vmultiplier
-R3
 R1
+vmultiplier
+R2
+R3
 !i10b 1
 !s100 AZmRzh_SoM:aKF<O<A<710
 INHo_V9zTE03hSeGlkfPOz1
@@ -91,10 +91,10 @@ R7
 R8
 !i113 0
 R9
-R2
-vmux2
-R3
 R1
+vmux2
+R2
+R3
 !i10b 1
 !s100 h>TDhW=Uc>ENHJ24Zm;k_3
 IRCkFilOZC8Bg_4J2ZR?hi3
@@ -115,10 +115,10 @@ R7
 R8
 !i113 0
 R9
-R2
-vmux4
-R3
 R1
+vmux4
+R2
+R3
 !i10b 1
 !s100 ZjNiLR8ERi@`iMoON:n`72
 I:9[EW8;G[C2Jc_mg=fCUQ2
@@ -139,20 +139,20 @@ R7
 R8
 !i113 0
 R9
-R2
-vtb
-R3
 R1
+vtb
+R2
+R3
 !i10b 1
-!s100 AR`Wh]O7bmKMm2N]XC?R^2
-I@l@@?RTW3EZh^D?l8ICiH3
+!s100 Kl:maG7JC3QQzI_K5?mlQ2
+IWGS71[Mg3J`9BQ2Y9]8gC1
 S1
 R0
-w1713377350
+w1713479818
 8fdiv_tb.sv
 Ffdiv_tb.sv
 !i122 0
-L0 2 77
+L0 2 115
 R4
 R5
 r1
@@ -163,4 +163,4 @@ R7
 R8
 !i113 0
 R9
-R2
+R1

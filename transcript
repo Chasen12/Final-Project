@@ -13,7 +13,7 @@
 # //
 # do fdiv.do
 # Model Technology ModelSim SE-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 13:09:25 on Apr 17,2024
+# Start time: 17:37:13 on Apr 18,2024
 # vlog -reportprogress 300 fdiv.sv fdiv_tb.sv 0419-flopenr.sv modifiedmux2.sv modifiedmux4.sv modifiedunsignedmultiplier.sv 
 # -- Compiling module fdiv
 # -- Compiling module tb
@@ -25,10 +25,10 @@
 # Top level modules:
 # 	tb
 # 	multiplier
-# End time: 13:09:25 on Apr 17,2024, Elapsed time: 0:00:00
+# End time: 17:37:13 on Apr 18,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" tb 
-# Start time: 13:09:25 on Apr 17,2024
+# Start time: 17:37:13 on Apr 18,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
 # Loading work.tb(fast)
@@ -38,5 +38,5 @@
 # Loading work.flopren(fast)
 # .main_pane.list.interior.cs.body
 # .main_pane.wave.interior.cs.body.pw.wf
-# End time: 13:10:03 on Apr 17,2024, Elapsed time: 0:00:38
+# End time: 19:15:54 on Apr 18,2024, Elapsed time: 1:38:41
 # Errors: 0, Warnings: 0

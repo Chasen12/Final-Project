@@ -18,18 +18,18 @@ logic [29:0] Df;
 
 //unpack N and D data to 30 bit var
 
-assign Nf = 30'b000000100000000000000000000000 | {7'b0, N[22:0]};
-assign Df = 30'b000000100000000000000000000000 | {7'b0, D[22:0]};
-assign ia = 30'b000000101000000000000000000000;
+assign Nf = 30'b100000000000000000000000000000 | {N[22:0], 6'b0};
+assign Df = 30'b100000000000000000000000000000 | {D[22:0], 6'b0};
+assign ia = 30'b011000000000000000000000000000;
 
 // gets us our signed bit 
 //assign Q = N[31] ^ D[31];
 mux2 muxA (ia, regc, op, ina);
 mux4 muxB (Nf, Df, rega, regb, rm, inb);
 
-flopren RA (clk, reset, ena, mult_output [59:30], rega);
-flopren RC (clk, reset, enc, comp_output [59:30], regc);
-flopren RB (clk, reset, enb, mult_output [59:30], regb);
+flopren RA (clk, reset, ena, mult_output [58:29], rega);
+flopren RC (clk, reset, enc, comp_output [58:29], regc);
+flopren RB (clk, reset, enb, mult_output [58:29], regb);
 
 assign mult_output = ina * inb;
 
