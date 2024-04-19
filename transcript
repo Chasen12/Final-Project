@@ -13,7 +13,7 @@
 # //
 # do fdiv.do
 # Model Technology ModelSim SE-64 vlog 10.7f Compiler 2020.03 Mar 24 2020
-# Start time: 15:43:41 on Apr 19,2024
+# Start time: 15:55:44 on Apr 19,2024
 # vlog -reportprogress 300 fdiv.sv fdiv_tb.sv 0419-flopenr.sv modifiedmux2.sv modifiedmux4.sv modifiedunsignedmultiplier.sv 
 # -- Compiling module fdiv
 # -- Compiling module tb
@@ -26,10 +26,10 @@
 # 	tb
 # 	mux2
 # 	multiplier
-# End time: 15:43:41 on Apr 19,2024, Elapsed time: 0:00:00
+# End time: 15:55:44 on Apr 19,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" tb 
-# Start time: 15:43:41 on Apr 19,2024
+# Start time: 15:55:44 on Apr 19,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
 # Loading work.tb(fast)
