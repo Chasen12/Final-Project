@@ -1,26 +1,32 @@
 m255
 K4
 z2
-!s99 nomlopt
-!s11f vlog 2021.1 2021.01, Jan 19 2021
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/temp/Documents/OSU/HSCA/Final Project
+Z0 dC:/OSU/HSCA/Final-Project
 T_opt
+<<<<<<< HEAD
 !s110 1713479834
 VFPBV0XH]Y49XlJBNXcHCR2
 04 2 4 work tb fast 0
 =1-18c04ddb1faf-6621a099-374-6da8
 !s124 OEM100
+=======
+!s110 1713386388
+VgkIhhKb@>6ZPz12l@MDdN2
+04 2 4 work tb fast 0
+=1-9828a641dea0-66203394-30-51b0
+>>>>>>> 8a24e4a (local commit)
 o-quiet -auto_acc_if_foreign -work work +acc
 Z1 tCvgOpt 0
 n@_opt
-OL;O;2021.1;73
+OL;O;10.7f;67
 vfdiv
+<<<<<<< HEAD
 Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
 Z3 !s110 1713479833
 !i10b 1
@@ -29,121 +35,152 @@ I8k^IEUVVW`h8T<0ZKYkBf2
 S1
 R0
 w1713393972
+=======
+Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z3 !s110 1713386387
+!i10b 1
+!s100 cSTM45mCkGokRb:[X3NKd1
+IFUZiWBJOKJJ71]]6<hP7S3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 fdiv_sv_unit
+S1
+R0
+Z5 w1713379384
+>>>>>>> 8a24e4a (local commit)
 8fdiv.sv
 Ffdiv.sv
-!i122 0
-L0 1 39
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-Z5 OL;L;2021.1;73
+L0 1
+Z6 OL;L;10.7f;67
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z6 !s108 1713479833.000000
 Z7 !s107 modifiedunsignedmultiplier.sv|modifiedmux4.sv|modifiedmux2.sv|0419-flopenr.sv|fdiv_tb.sv|fdiv.sv|
 Z8 !s90 -reportprogress|300|fdiv.sv|fdiv_tb.sv|0419-flopenr.sv|modifiedmux2.sv|modifiedmux4.sv|modifiedunsignedmultiplier.sv|
 !i113 0
 Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+=======
+Z7 !s108 1713386387.000000
+Z8 !s107 modifiedunsignedmultiplier.sv|modifiedmux4.sv|modifiedmux2.sv|0419-flopenr.sv|fdiv_tb.sv|fdiv.sv|
+Z9 !s90 -reportprogress|300|fdiv.sv|fdiv_tb.sv|0419-flopenr.sv|modifiedmux2.sv|modifiedmux4.sv|modifiedunsignedmultiplier.sv|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+>>>>>>> 8a24e4a (local commit)
 R1
 vflopren
 R2
 R3
 !i10b 1
-!s100 ULSK<llJ1`?0iIUX3FBK21
-IYK<FbJ1KOJ9Y0=XnWK6<11
+!s100 LglQ=]3n>LhB6??m]RHdf3
+IR<?;d[HKHUGWf?<IO=Z=b1
+R4
+!s105 _04192dflopenr_sv_unit
 S1
 R0
-w1713229243
+R5
 80419-flopenr.sv
 F0419-flopenr.sv
-!i122 0
-L0 4 11
-R4
-R5
+L0 4
+R6
 r1
 !s85 0
 31
-R6
 R7
 R8
-!i113 0
 R9
+<<<<<<< HEAD
+=======
+!i113 0
+R10
+>>>>>>> 8a24e4a (local commit)
 R1
 vmultiplier
 R2
 R3
 !i10b 1
-!s100 AZmRzh_SoM:aKF<O<A<710
-INHo_V9zTE03hSeGlkfPOz1
+!s100 TEkYh[OAl>8bIMFSjJ]F_0
+I@m_b[LnT`TWZ5ASV<b5JK2
+R4
+!s105 modifiedunsignedmultiplier_sv_unit
 S1
 R0
-w1713229248
+w1712247366
 8modifiedunsignedmultiplier.sv
 Fmodifiedunsignedmultiplier.sv
-!i122 0
-L0 3 5
-R4
-R5
+L0 3
+R6
 r1
 !s85 0
 31
-R6
 R7
 R8
-!i113 0
 R9
+<<<<<<< HEAD
+=======
+!i113 0
+R10
+>>>>>>> 8a24e4a (local commit)
 R1
 vmux2
 R2
 R3
 !i10b 1
-!s100 h>TDhW=Uc>ENHJ24Zm;k_3
-IRCkFilOZC8Bg_4J2ZR?hi3
+!s100 ClI4Mab1EjdVY=M;mScQi2
+IoIcF=k:>[g09hC:i:FdZS2
+R4
+!s105 modifiedmux2_sv_unit
 S1
 R0
-w1713229251
+R5
 8modifiedmux2.sv
 Fmodifiedmux2.sv
-!i122 0
-L0 3 6
-R4
-R5
+L0 3
+R6
 r1
 !s85 0
 31
-R6
 R7
 R8
-!i113 0
 R9
+<<<<<<< HEAD
+=======
+!i113 0
+R10
+>>>>>>> 8a24e4a (local commit)
 R1
 vmux4
 R2
 R3
 !i10b 1
-!s100 ZjNiLR8ERi@`iMoON:n`72
-I:9[EW8;G[C2Jc_mg=fCUQ2
+!s100 [af>9cCIjJ5;:FGPYf4ZI2
+I::ao2HbhJHgCkDk0?fXX92
+R4
+!s105 modifiedmux4_sv_unit
 S1
 R0
-w1713229250
+R5
 8modifiedmux4.sv
 Fmodifiedmux4.sv
-!i122 0
-L0 3 7
-R4
-R5
+L0 3
+R6
 r1
 !s85 0
 31
-R6
 R7
 R8
-!i113 0
 R9
+<<<<<<< HEAD
+=======
+!i113 0
+R10
+>>>>>>> 8a24e4a (local commit)
 R1
 vtb
 R2
 R3
 !i10b 1
+<<<<<<< HEAD
 !s100 Kl:maG7JC3QQzI_K5?mlQ2
 IWGS71[Mg3J`9BQ2Y9]8gC1
 S1
@@ -155,12 +192,28 @@ Ffdiv_tb.sv
 L0 2 115
 R4
 R5
+=======
+!s100 6^XTSchdO39:Fmh<<ZVgP2
+IfNbABLP_MhRZ8JXcEb`NB1
+R4
+!s105 fdiv_tb_sv_unit
+S1
+R0
+R5
+8fdiv_tb.sv
+Ffdiv_tb.sv
+L0 2
+R6
+>>>>>>> 8a24e4a (local commit)
 r1
 !s85 0
 31
-R6
 R7
 R8
-!i113 0
 R9
+<<<<<<< HEAD
+=======
+!i113 0
+R10
+>>>>>>> 8a24e4a (local commit)
 R1
