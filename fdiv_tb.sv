@@ -3,15 +3,16 @@ module tb();
 
    logic  [31:0] N;
    logic 	[31:0] D;
-   logic  [1:0] rm;
+   logic  [1:0] c1;
    logic 	[1:0] op;
+   logic  rm;
    logic  enc, ena, enb;
    logic        reset;   
    logic  clk; 
    logic 	[31:0] Q; 
    
   // instantiate device under test
-   fdiv dut (N, D, rm, op, enc, ena, enb, reset, clk, Q);
+   fdiv dut (N, D, c1, op, rm, enc, ena, enb, reset, clk, Q);
 
    // 2 ns clock
    initial 
