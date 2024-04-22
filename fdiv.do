@@ -27,7 +27,7 @@ if [file exists work] {
 vlib work
 
 # compile source files
-vlog fdiv.sv fdiv_tb.sv 0419-flopenr.sv modifiedmux2.sv modifiedmux4.sv modifiedunsignedmultiplier.sv
+vlog fdiv.sv fdiv_tb.sv 0419-flopenr.sv modifiedmux2.sv modifiedmux4.sv 
 
 # start and run simulation
 vsim -voptargs=+acc tb
