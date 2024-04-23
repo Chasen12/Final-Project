@@ -41,9 +41,7 @@ add wave -radix binary /tb/dut/N
 add wave -radix binary /tb/dut/D
 add wave -radix binary /tb/dut/rm
 add wave -radix binary /tb/dut/op
-add wave -radix binary /tb/dut/enc
-add wave -radix binary /tb/dut/ena
-add wave -radix binary /tb/dut/enb
+
 add wave -radix binary /tb/dut/Q
 add wave -radix binary /tb/dut/ia
 add wave -radix binary /tb/dut/ina
@@ -58,6 +56,10 @@ add wave -radix binary /tb/dut/Df
 add wave -radix binary /tb/dut/clk
 add wave -radix binary /tb/dut/rem
 add wave -radix binary /tb/dut/prem
+add wave -radix binary /tb/dut/regd
+add wave -radix binary /tb/dut/dec
+add wave -radix binary /tb/dut/inc
+add wave -radix binary /tb/dut/trunc
 
 add list -radix binary -r /tb/*
 add log -r /*

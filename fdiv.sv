@@ -1,8 +1,7 @@
 module fdiv (input  logic [31:0] N, D,
 			input  logic [1:0] c1,
-			input  logic [1:0] op,
+			input  logic [5:0] op,
 			input  logic rm,
-			input  logic enc, ena, enb,
 			input  logic reset,
 			input  logic clk ,
             output logic [31:0] Q);
@@ -13,22 +12,20 @@ logic [29:0] inb ;
 logic [29:0] regc;
 logic [29:0] rega;
 logic [29:0] regb;
+logic [29:0] regd;
 logic [59:0] mult_output;
 logic [59:0] comp_output;
 logic [29:0] Nf;
 logic [29:0] Df;
 logic [29:0] rem;
-logic [59:0] prem;
+logic [29:0] prem;
 logic [29:0] rn;
 logic [29:0] rz;
 logic [29:0] mat;
 logic [29:0] trunc;
 logic [29:0] inc;
 logic [29:0] dec;
-logic [29:0] RNE;
-logic [29:0] q_const;
-logic [29:0] qp_const;
-logic [29:0] qm_const;
+logic [29:0] rne;
 logic [1:0] rzd;
 //unpack N and D data to 30 bit var
 
@@ -42,31 +39,39 @@ assign ia = 30'b011000000000000000000000000000;
 
 
 //multiplication muxes
-mux4 muxA (ia, regc, rega, prem, op, ina);
+mux4 muxA (ia, regc, rega, prem, op[1:0], ina);
 mux4 muxB (Nf, Df, rega, regb, c1, inb);
 ////rounding mode mux
 
-mux4 muxRN (trunc, dec, inc, rne,rzd, rn);
+mux4 muxRN (trunc, dec, inc, rne, rzd, rn);
 
 //regs
-flopren RA (clk, reset, ena, mult_output [58:28], rega);
-flopren RC (clk, reset, enc, comp_output [58:28], regc);
-flopren RB (clk, reset, enb, mult_output [58:28], regb);
+flopren RA (clk, reset, op [4], mult_output [58:29], rega);
+flopren RC (clk, reset, op [2], comp_output [58:29], regc);
+flopren RB (clk, reset, op [3], mult_output [58:29], regb);
+flopren RD (clk, reset, op [5], mult_output [59:30], regd);
 
 //computation
 assign mult_output = ina * inb;
 assign comp_output  = ~mult_output;
-assign rem = mult_output[59:29] - Nf;
+assign rem = regd - Nf;
   
 //the rounding hell hole
-assign q_const =  30'b000000000000000000000000010000;
-assign qp_const = 30'b000000000000000000000001010000;
-assign qm_const = 30'b111111111111111111111111001111;
 
 
-assign trunc = rega + q_const;
-assign inc = rega + qp_const;
-assign dec = rega + qm_const;
+
+assign trunc = rega + 30'b000000000000000000000000010000;
+assign inc = rega + 30'b000000000000000000000001010000;
+assign dec = rega + 30'b111111111111111111111111001111;
+
+
+assign Q [31] = N[31] ^ D[31];
+assign Q [22:0] = rn [28:5];
+//assign Q 
+
+
+
+
 
 always @(*)
   begin
