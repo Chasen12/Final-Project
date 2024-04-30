@@ -25,6 +25,34 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f MIXED_VERSIONS
 13
 !s112 1.1
@@ -54,10 +82,10 @@ n@_opt1
 R5
 R1
 T_opt2
-!s110 1713829934
-VWl_OjFk=TWaUS61S_6AC63
+!s110 1714433654
+V[VjJ6KIODURIhR6;WeIiC3
 R2
-=1-18c04ddb1faf-6626f82e-f1-3b44
+=1-18c04ddb1faf-66302e75-3a8-514c
 !s124 OEM100
 R3
 R4
@@ -65,25 +93,25 @@ n@_opt2
 OL;O;2021.1;73
 vfdiv
 Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z7 !s110 1713829933
+Z7 !s110 1714433653
 !i10b 1
-!s100 z@DRBW>Ec`@VkP07`kBQR2
-IWzF`aaR=e_imnVbXzSO[41
+!s100 QkSAHUnicbZ?dnf<MjYUP3
+IZizP3PRKCkjC]:]CC<[8Q1
 S1
-Z8 dC:/Users/temp/Documents/OSU/HSCA/Final Project
-w1713829929
+Z8 dC:/Users/temp/Documents/OSU/Final Project/Final-Project
+w1714433635
 8fdiv.sv
 Ffdiv.sv
 !i122 0
-L0 1 102
+L0 1 119
 Z9 VDg1SIo80bB@j0V0VzS_@n1
 Z10 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z11 !s108 1713829933.000000
-Z12 !s107 modifiedmux4.sv|modifiedmux2.sv|0419-flopenr.sv|fdiv_tb.sv|fdiv.sv|
-Z13 !s90 fdiv.sv|fdiv_tb.sv|0419-flopenr.sv|modifiedmux2.sv|modifiedmux4.sv|
+Z11 !s108 1714433653.000000
+Z12 !s107 modifiedmux2a.sv|modifiedmux4.sv|modifiedmux2.sv|0419-flopenr.sv|fdiv_tb.sv|fdiv.sv|
+Z13 !s90 -reportprogress|300|fdiv.sv|fdiv_tb.sv|0419-flopenr.sv|modifiedmux2.sv|modifiedmux4.sv|modifiedmux2a.sv|
 !i113 0
 Z14 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
@@ -95,7 +123,7 @@ R7
 IYK<FbJ1KOJ9Y0=XnWK6<11
 S1
 R8
-w1713229243
+Z15 w1713278264
 80419-flopenr.sv
 F0419-flopenr.sv
 !i122 0
@@ -119,11 +147,35 @@ R7
 IRCkFilOZC8Bg_4J2ZR?hi3
 S1
 R8
-w1713229251
+R15
 8modifiedmux2.sv
 Fmodifiedmux2.sv
 !i122 0
-L0 3 6
+Z16 L0 3 6
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R4
+vmux2a
+R6
+R7
+!i10b 1
+!s100 n_bXK`NlmY_>D=T6c:<gk2
+I6A5dnfIZiRF]oeXPfa4A52
+S1
+R8
+w1714429947
+8modifiedmux2a.sv
+Fmodifiedmux2a.sv
+!i122 0
+R16
 R9
 R10
 r1
@@ -143,7 +195,7 @@ R7
 I:9[EW8;G[C2Jc_mg=fCUQ2
 S1
 R8
-w1713229250
+R15
 8modifiedmux4.sv
 Fmodifiedmux4.sv
 !i122 0
@@ -163,11 +215,11 @@ vtb
 R6
 R7
 !i10b 1
-!s100 An2:DRFz;hbaEo^Dn7Fd12
-Ibj`ICdBn@`ZX`;WKWT8QV0
+!s100 ZRR2lAejojBRV5AokVGUI1
+I2B4oPT`HG18OELzB7IgYF3
 S1
 R8
-w1713828237
+w1714427499
 8fdiv_tb.sv
 Ffdiv_tb.sv
 !i122 0

@@ -27,7 +27,7 @@ if [file exists work] {
 vlib work
 
 # compile source files
-vlog fdiv.sv fdiv_tb.sv 0419-flopenr.sv modifiedmux2.sv modifiedmux4.sv 
+vlog fdiv.sv fdiv_tb.sv 0419-flopenr.sv modifiedmux2.sv modifiedmux4.sv modifiedmux2a.sv
 
 # start and run simulation
 vsim -voptargs=+acc tb
@@ -60,7 +60,11 @@ add wave -radix binary /tb/dut/regd
 add wave -radix binary /tb/dut/dec
 add wave -radix binary /tb/dut/inc
 add wave -radix binary /tb/dut/trunc
-
+add wave -radix binary /tb/dut/ne
+add wave -radix binary /tb/dut/nd
+add wave -radix binary /tb/dut/sl1
+add wave -radix binary /tb/dut/ned
+add wave -radix binary /tb/dut/ndd
 add list -radix binary -r /tb/*
 add log -r /*
 

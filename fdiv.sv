@@ -27,6 +27,12 @@ logic [29:0] inc;
 logic [29:0] dec;
 logic [29:0] rne;
 logic [1:0] rzd;
+logic [7:0] ne;
+logic sl1;
+logic [7:0] nd;
+logic [7:0] ned;
+logic [7:0] ndd;
+
 //unpack N and D data to 30 bit var
 
 assign Nf = 30'b100000000000000000000000000000 | {N[22:0], 6'b0};
@@ -34,7 +40,17 @@ assign Df = 30'b100000000000000000000000000000 | {D[22:0], 6'b0};
 assign ia = 30'b011000000000000000000000000000;
 
 // gets us our signed bit 
-//assign Q = N[31] ^ D[31];
+
+assign ne = N[30:23] - D[30:23] ;
+assign nd = D[30:23] - N[30:23];
+assign sl1 = D[30:23] > N[30:23];
+assign ned = ne + 8'b01111111;
+assign ndd = 8'b01111111 - nd;
+mux2a mux2a ((ned), (ndd), sl1, Q [30:23]);
+
+//10011111 159
+//10000011 131
+// 159-131 = 28
 
 
 
@@ -67,6 +83,7 @@ assign dec = rega + 30'b111111111111111111111111001111;
 
 assign Q [31] = N[31] ^ D[31];
 assign Q [22:0] = rn [28:5];
+
 //assign Q 
 
 
